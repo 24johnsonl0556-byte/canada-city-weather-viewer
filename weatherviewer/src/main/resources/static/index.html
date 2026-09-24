@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./app.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header> 
+    <header id="title"> 
     <h1>canada city weather report</h1>
     </header>
     <main>
-    <form action="./submit">
+    <div id="header1">
+    <form action =./app.js>
         <legend>enter city name</legend>
         City name = <input type="text">
         <input type ="submit" value = search>
     </form>
-    the data should goes here like 
-    tempture:varible <br>
-    wind:barible <br>
-    weather:varible <br>
+    <p id = select1> </p>City name(would be replace with name of chosen city) </p>
+    <table id="table1">
+        <tr>
+        <th>tempture</th><th>wind</th><th>weather</th>
+        </tr>
+        <td id="var1">varible</td><td id="var2">barible</td><td id="var3">wvarible</td>
+    </table>
+   </div>
     <footer>
-        <h2>captiol city stats:</h2>
-        <form action="/action_page.php">
-        <select name="captioal cities" id="">captioal cities
-            <option value ="a">a</option>
-            <option value ="b">b</option>
-            <option value ="c">c</option>
-            <option value ="d">d</option>
-            <option value ="e">e</option>
-            <option value ="f">f</option>
-            <option value ="g">g</option>
-            <option value ="h">h</option>
-            <option value ="i">i</option>
-            <option value ="j">j</option>
+        <h2 id = "captitle">provincial capitals stats:</h2>
+        <form action="./app.js">
+        <select name="captioal cities" id="dropdownlistchoice">captioal cities
+            <option value ="Edmonton">Edmonton</option>
+            <option value ="Victoria">Victoria</option>
+            <option value ="Winnipeg">Winnipeg</option>
+            <option value ="Fredericton">Fredericton</option>
+            <option value ="St. John's">St. John's</option>
+            <option value ="Halifax">Halifax</option>
+            <option value ="Toronto">Toronto</option>
+            <option value ="Charlottetown">Charlottetown</option>
+            <option value ="Quebec City">Quebec City</option>
+            <option value ="Regina">Regina</option>
         </select>
         <input type ="submit" value = search>
         </form>
-        here would ideally be a list of cities in a drop box, so when clicked it can run a reset to java app. and the values are like <br>
-        tempture:varible <br>
-        wind:barible <br>
-        weather:varible <br>
-
+        <p id = select2> </p>City name(would be replace with name of chosen city) </p>
+        <table id="table2">
+        <tr>
+        <th>tempture</th><th>wind</th><th>weather</th>
+        </tr>
+        <td id="cap1">varible</td id="cap2"><td>barible</td><td id="cap3">wvarible</td>
+    </table>
     </footer>
     </main>
 
